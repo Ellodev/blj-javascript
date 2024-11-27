@@ -1,0 +1,14 @@
+div {
+    display: inline-block;
+    border: 3px solid black;
+}
+
+.hover {
+    border: 3px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    h2 {
+        color: red;
+    }
+}
