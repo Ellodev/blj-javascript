@@ -1,19 +1,17 @@
 const ballContainer = document.getElementById("ball-container");
 
-// Add event listeners to all children
 for (let i = 0; i < ballContainer.children.length; i++) {
     ballContainer.children[i].addEventListener("click", changeBall);
 }
 
 function changeBall(event) {
-    // Ensure the clicked element is the target
     let bild = event.target;
 
     if (bild.src.indexOf("ball.png") > -1) {
-        bild.src = "kreuz.png"; // Change the image
+        bild.src = "kreuz.png";
     } else {
-        bild.remove(); // Remove the clicked element
-        checkStatus(); // Check if the game is over
+        bild.remove();
+        checkStatus();
     }
 }
 
